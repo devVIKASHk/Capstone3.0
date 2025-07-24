@@ -1,0 +1,33 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Vikash",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node --watch app.js",
+    "generate": "drizzle-kit generate",
+    "migrate": "drizzle-kit migrate",
+    "studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "arctic": "^3.7.0",
+    "argon2": "^0.43.0",
+    "chalk": "^5.4.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.1.0",
+    "drizzle-orm": "^0.44.2",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.18.0",
+    "mysql2": "^3.14.1",
+    "request-ip": "^3.3.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.4"
+  }
+}

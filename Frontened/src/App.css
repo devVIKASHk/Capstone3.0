@@ -1,0 +1,60 @@
+*{
+  box-sizing:border-box;
+  
+  
+}
+body{
+  background-color: black;
+  color: white;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #0f172a inset !important; /* your desired input background */
+  -webkit-text-fill-color: rgb(251, 54, 251) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+}
+:root {
+  --font-heading: "Poppins", sans-serif;
+  --font-para: "Inter", sans-serif;
+  --font-number: "Orbitron", sans-serif;
+}
+
+h1{
+  font-family: var(--font-heading);
+}
+p{
+  font-family: var(--font-para);
+}
+
+nav{
+  background-color: rgba(15, 23, 42, 0.9);
+  /* backdrop-filter: blur(4px); */
+}
+
+
+.workoutdiv{
+  background-color: rgba(255, 254, 254, 0.068);
+}
+
+
+
+
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in-down {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-in-out forwards;
+}
+
+.animate-fade-in-down {
+  animation: fade-in-down 0.8s ease-out forwards;
+}
