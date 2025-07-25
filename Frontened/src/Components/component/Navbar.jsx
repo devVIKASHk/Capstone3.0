@@ -269,3 +269,34 @@ export default Navbar
 {/* <h1 class="text-5xl font-extrabold bg-gradient-to-r from-fuchsia-600 via-purple-500 to-pink-500 bg-clip-text text-transparent">
   STRIVEUP
 </h1> */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

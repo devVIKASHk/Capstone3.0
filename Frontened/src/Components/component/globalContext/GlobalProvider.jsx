@@ -1,9 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const AppContext = React.createContext();
 
 
 export function GlobalProvider ({ children }) {
+
   const [refreshToken, setRefreshToken] = React.useState(
     () => {
         const token = localStorage.getItem("refresh_token");
@@ -54,6 +56,12 @@ export function GlobalProvider ({ children }) {
           const result = await res.json()
           if (!res.ok){
             throw new Error({message:result.message})
+          }
+
+          if (result.error){
+            setRefreshToken(false)
+        
+            
           }
           
           setRefreshToken(false);
@@ -125,5 +133,30 @@ export function useGlobalContext(){
     }
     return context
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

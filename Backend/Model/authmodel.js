@@ -125,7 +125,7 @@ export const generateRefreshToken = async (payload)=>{
 
 export const verifyToken = async (token)=>{
    try{
-        console.log(token);
+    
         return  jwt.verify(token,env.TOKEN_SECRET_ID);
 
     }catch(err){
@@ -261,6 +261,25 @@ export const onlyGoogleAuthDataInsertion= async (info)=>{
     console.error(chalk.blueBright(`Error while only google authentication data insertion: `), err);
   }
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

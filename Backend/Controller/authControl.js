@@ -172,6 +172,13 @@ export const sessionDeletionAfterRefreshTokenDeletion= async (req,res)=>{
     try{
         
         const id =  req.body;
+
+        if (!id){
+            return res.status(200).json({
+                error:'Id not not found!',
+                message:'Please Login to Proceed!'
+            })
+        }
         
         const deletionInfo= await findingDeletionSesionDataByUserId(id.userId);
         if (!deletionInfo){
@@ -301,3 +308,29 @@ export const googleAuthCallback= async (req,res)=>{
         console.error(`Error while google authentication callback:`,err);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
