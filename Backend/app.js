@@ -39,6 +39,18 @@ app.use(authenticationVerification)
 app.use(OperationalRouter);
 app.use(AuthRouter);
 
+app.get(
+    '/',
+    (req,res)=>{
+        res.send(
+            {
+                activeStatus:true,
+                error:false
+            }
+        )
+    }
+)
+
 
 
 app.use(
